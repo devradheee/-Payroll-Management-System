@@ -1,0 +1,53 @@
+<% layout('layout') %>
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>Payroll</h2>
+  <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#genPayroll">Generate Payroll</button>
+</div>
+
+<div id="genPayroll" class="collapse mb-3">
+  <form class="card card-body" method="post" action="/payroll/generate">
+    <div class="row g-2">
+      <div class="col-md-5">
+        <select class="form-select" name="employee_id" required>
+          <option value="">Select employee</option>
+          <% employees.forEach(emp => { %>
+            <option value="<%= emp.id %>"><%= emp.employee_code %> (Base: <%= emp.base_salary %>)</option>
+          <% }) %>
+        </select>
+      </div>
+      <div class="col-md-4"><input class="form-control" type="month" name="month" required /></div>
+      <div class="col-md-3"><button class="btn btn-success" type="submit">Generate</button></div>
+    </div>
+  </form>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Employee</th>
+        <th>Basic</th>
+        <th>HRA</th>
+        <th>Allowances</th>
+        <th>Deductions</th>
+        <th>Net Pay</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% rows.forEach(r => { %>
+        <tr>
+          <td><%= r.month %></td>
+          <td><%= r.employee_code %></td>
+          <td><%= r.basic %></td>
+          <td><%= r.hra %></td>
+          <td><%= r.allowances %></td>
+          <td><%= r.deductions %></td>
+          <td><strong><%= r.net_pay %></strong></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>
+
+

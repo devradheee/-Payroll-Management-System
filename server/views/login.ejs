@@ -1,0 +1,22 @@
+<% layout('layout') %>
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    <h2 class="mb-3">Login</h2>
+    <% if (message && message.length) { %>
+      <div class="alert alert-danger"><%= message[0] %></div>
+    <% } %>
+    <form method="post" action="/login">
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input class="form-control" name="email" type="email" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input class="form-control" name="password" type="password" required />
+      </div>
+      <button class="btn btn-primary" type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+
