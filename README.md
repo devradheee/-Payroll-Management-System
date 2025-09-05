@@ -75,8 +75,8 @@ Before running this application, make sure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/devradheee/-Payroll-Management-System.git
-cd -Payroll-Management-System
+git clone https://github.com/devradheee/Payroll-Management-System.git
+cd Payroll-Management-System
 ```
 
 ### 2. Install Dependencies
@@ -267,7 +267,8 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 **Radheshyam Kumar**
 - GitHub: [@devradheee](https://github.com/devradheee)
-- Repository: [Payroll Management System](https://github.com/devradheee/-Payroll-Management-System)
+- Portfolio: [radheee.vercel.app](https://radheee.vercel.app/)
+- Repository: [Payroll Management System](https://github.com/devradheee/Payroll-Management-System)
 
 ## 🙏 Acknowledgments
 
