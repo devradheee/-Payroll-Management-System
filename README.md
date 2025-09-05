@@ -81,12 +81,12 @@ cd -Payroll-Management-System
 
 ### 2. Install Dependencies
 ```bash
-cd server
+cd payroll-management-system
 npm install
 ```
 
 ### 3. Environment Configuration
-Create a `.env` file in the `server` directory:
+Create a `.env` file in the `payroll-management-system` directory:
 ```bash
 # Server Configuration
 PORT=3000
@@ -136,7 +136,7 @@ http://localhost:3000
 
 ```
 Payroll-Management-System/
-├── server/
+├── payroll-management-system/
 │   ├── src/
 │   │   ├── app.js          # Main Express application
 │   │   ├── auth.js         # Authentication helpers
