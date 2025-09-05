@@ -33,7 +33,6 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
@@ -102,9 +101,8 @@ pids
 *.seed
 *.pid.lock
 
-# SQLite databases
+# Database files
 *.sqlite
-*.sqlite3
 *.db
 
 # Session files
@@ -126,14 +124,14 @@ sessions.sqlite
 ehthumbs.db
 Thumbs.db
 
-# Build outputs
+# Build directories
 build/
 dist/
 
 # Test coverage
 coverage/
 
-# Environment files
+# Environment variables
 .env
 .env.local
 .env.development.local
